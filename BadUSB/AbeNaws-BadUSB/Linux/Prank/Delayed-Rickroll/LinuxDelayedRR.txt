@@ -1,0 +1,16 @@
+ 
+REM #########################################
+REM #                                       |
+REM # Title        : Linux Delayed Rickroll |
+REM # Author       : AbeNaws                |
+REM # Version      : 1.1                    |
+REM # Category     : Prank                  |
+REM # Target       : Linux                  |
+REM #                                       |
+REM #########################################
+
+CTRL-ALT t
+DELAY 1000
+REM             | Time in seconds you want the delay for
+STRING ((sleep 600; xdg-open https://shattereddisk.github.io/rickroll/rickroll.mp4) & xdotool windowminimize $(xdotool getactivewindow)) && exit
+ENTER

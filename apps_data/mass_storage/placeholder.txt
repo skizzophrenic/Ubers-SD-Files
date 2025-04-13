@@ -1,1 +1,0 @@
-This file is just here to make sure that we create this folder, as its needed for the Windows Login Exfil Script!

@@ -1,0 +1,22 @@
+REM #################################
+REM #                               |
+REM # Title        : Unpause Music  |
+REM # Author       : AbeNaws        |
+REM # Version      : 1.1            |
+REM # Category     : Prank          |
+REM # Target       : IOS            |
+REM # Credit       : Aleff          |
+REM #                               |
+REM #################################
+
+
+GUI SPACE
+DELAY 300
+STRING music
+ENTER
+DELAY 1000
+SPACE
+DELAY 500
+GUI h
+DELAY 1000
+GUI h

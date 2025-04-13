@@ -1,0 +1,22 @@
+REM ###########################################
+REM #                                         |
+REM # Title        : Windows Move Taskbar     |
+REM # Author       : AbeNaws                  |
+REM # Version      : 1.0                      |
+REM # Category     : Prank                    |
+REM # Target       : Windows 10               |
+REM #                                         |
+REM ###########################################
+
+DELAY 1000
+GUI
+DELAY 500
+STRING taskbar location
+DELAY 100
+ENTER
+DELAY 2000
+ENTER
+UP
+ENTER
+DELAY 100
+ALT F4

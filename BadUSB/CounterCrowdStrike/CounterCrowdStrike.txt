@@ -1,0 +1,58 @@
+REM CounterCrowdStrike
+REM Author: ooovenenoso
+DELAY 2000
+GUI x
+DELAY 2000
+STRING a
+DELAY 2000
+LEFTARROW
+DELAY 2000
+ENTER
+DELAY 4000
+STRING Set-ExecutionPolicy Bypass -Scope Process -Force;
+ENTER
+DELAY 1000
+STRING $CrowdStrikeDir = 'C:\Windows\System32\drivers\CrowdStrike';
+ENTER
+DELAY 1000
+STRING if (Test-Path -Path $CrowdStrikeDir) {
+ENTER
+DELAY 1000
+STRING     $files = Get-ChildItem -Path $CrowdStrikeDir -Filter 'C-00000291*.sys';
+ENTER
+DELAY 1000
+STRING     if ($files) {
+ENTER
+DELAY 1000
+STRING         foreach ($file in $files) {
+ENTER
+DELAY 1000
+STRING             Remove-Item -Path $file.FullName -Force;
+ENTER
+DELAY 1000
+STRING             Write-Output "Deleted $($file.FullName)";
+ENTER
+DELAY 1000
+STRING         }
+ENTER
+DELAY 1000
+STRING     } else {
+ENTER
+DELAY 1000
+STRING         Write-Output "No matching CrowdStrike file found.";
+ENTER
+DELAY 1000
+STRING     }
+ENTER
+DELAY 1000
+STRING } else {
+ENTER
+DELAY 1000
+STRING     Write-Output "CrowdStrike directory does not exist.";
+ENTER
+DELAY 1000
+STRING }
+ENTER
+DELAY 1000
+STRING Restart-Computer -Force;
+ENTER

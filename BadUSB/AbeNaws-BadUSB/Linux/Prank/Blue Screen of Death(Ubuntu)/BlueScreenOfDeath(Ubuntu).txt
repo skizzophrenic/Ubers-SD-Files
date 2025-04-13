@@ -1,0 +1,17 @@
+REM #######################################
+REM #                                     |
+REM # Title       : Blue Screen of Death  |
+REM # Author      : AbeNaws               |
+REM # Version     : 1.0                   |
+REM # Category    : Prank                 |
+REM # Target      : Linux                 |
+REM # Credit      : Windows Repair        |
+REM #                                     |
+REM #######################################
+
+CTRL-ALT t
+DELAY 1000
+STRING open https://wallpapercave.com/wp/wp3199026.jpg && exit
+ENTER
+DELAY 1000
+F11

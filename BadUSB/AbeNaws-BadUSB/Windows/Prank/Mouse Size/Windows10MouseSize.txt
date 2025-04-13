@@ -1,0 +1,39 @@
+REM ###########################################
+REM #                                         |
+REM # Title        : Windows Mouse Size       |
+REM # Author       : AbeNaws                  |
+REM # Version      : 1.0                      |
+REM # Category     : Prank                    |
+REM # Target       : Windows 10               |
+REM #                                         |
+REM ###########################################
+
+DELAY 1000
+GUI
+DELAY 500
+STRING mouse size
+DELAY 100
+ENTER
+DELAY 2000
+RIGHT
+RIGHT
+RIGHT
+RIGHT
+RIGHT
+RIGHT
+RIGHT
+RIGHT
+RIGHT
+RIGHT
+RIGHT
+RIGHT
+RIGHT
+RIGHT
+DELAY 100
+TAB
+DELAY 100
+RIGHT
+RIGHT
+ENTER
+DELAY 100
+ALT F4

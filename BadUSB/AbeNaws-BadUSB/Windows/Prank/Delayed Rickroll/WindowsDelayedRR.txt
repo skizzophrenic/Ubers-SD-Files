@@ -1,0 +1,16 @@
+REM ###########################################
+REM #                                         |
+REM # Title        : Windows Delayed Rickroll |
+REM # Author       : AbeNaws                  |
+REM # Version      : 1.0                      |
+REM # Category     : Prank                    |
+REM # Target       : Windows                  |
+REM #                                         |
+REM ###########################################
+
+DELAY 1000
+GUI r
+DELAY 500
+REM                               Repeat count $n=#; | $d=#; Delay time in seconds
+STRING powershell -w h -NoP -NonI -Exec Bypass $n=3;$d=600;1..$n|%{Start-Sleep -s $d; Start-Process "https://shattereddisk.github.io/rickroll/rickroll.mp4"}
+ENTER

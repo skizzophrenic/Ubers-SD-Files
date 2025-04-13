@@ -1,0 +1,23 @@
+REM ###########################################
+REM #                                         |
+REM # Title        : Windows Color Filter     |
+REM # Author       : AbeNaws                  |
+REM # Version      : 1.0                      |
+REM # Category     : Prank                    |
+REM # Target       : Windows                  |
+REM #                                         |
+REM ###########################################
+
+DELAY 1000
+GUI
+DELAY 500
+STRING color filters
+DELAY 100
+ENTER
+DELAY 2000
+SPACE
+TAB
+TAB
+SPACE
+DELAY 100
+ALT F4
