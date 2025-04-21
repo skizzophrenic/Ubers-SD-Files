@@ -1,0 +1,1 @@
+Hunter ceiling fan remote UC7848T
