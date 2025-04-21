@@ -17,7 +17,7 @@ let usbdisk = require("usbdisk");
 let storage = require("storage");
 
 print("Checking for Image...");
-if (storage.exists(image)) {
+if (storage.fileExists(image)) {
     print ("Storage Exists.");
 }
 else {
